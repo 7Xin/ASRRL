@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASRRL-TTS: Target Domain Refined Similarity Enhancement with Agile Speaker Representation Reinforcement Learning in Speaker Adaptation</title>
+    <title>ASRRL-TTS: Agile Speaker Representation Reinforcement Learning for Text-to-Speech Speaker Adaptation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Robust Zero-Shot Text-to-Speech Synthesis with Reverse Inference Optimization</h1>
+        <h1>ASRRL-TTS: Agile Speaker Representation Reinforcement Learning for Text-to-Speech Speaker Adaptation</h1>
         <p>Ruibo Fu†,∗, Xin Qi†,*, Zhengqi Wen, Jianhua Tao, Tao Wang, Chunyu Qiang, Zhiyong Wang,
             Yi Lu, Xiaopeng Wang, Shuchen Shi,Yukun Liu, Xuefei Liu, Shuai Zhang,</p>
     </header>
@@ -33,7 +33,7 @@
                 <tr>
                     <th>Sample</th>
                     <th>Reference Speech</th>
-                    <th>fine-tune</th>
+                    <th>Fine-tune</th>
                     <th>ASRRL</th>
                     <th>Ground-Truth</th>
                     <th>Scenario</th>
@@ -68,7 +68,7 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Truncation</td>
+                    <td>vits-SS (vctk)</td>
                     <td>Her eyes seemed to regard him with mild pity her holiness a strange light glowing faintly upon her frail flesh did not humiliate the sinner who approached her</td>
                 </tr>
                 <tr>
@@ -97,7 +97,7 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Truncation</td>
+                    <td>vits-SS (libritts-clean)</td>
                     <td>Why was the sacrament of the eucharist instituted under the two species of bread and wine if jesus christ be present body and blood soul and divinity in the bread alone and in the wine alone</td>
                 </tr>
                 <tr>
@@ -126,7 +126,7 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Truncation</td>
+                    <td>vits-SS (libritts-other)</td>
                     <td>It was idle for him to move himself to be generous towards them to tell himself that if he ever came to their gates stripped of his pride beaten and in beggar's weeds that they would be generous towards him loving him as themselves</td>
                 </tr>
                 <tr>
@@ -155,7 +155,7 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Truncation</td>
+                    <td>diff-SS (vctk)</td>
                     <td>Number ten fresh nelly is waiting on you good night husband</td>
                 </tr>
                 <tr>
@@ -184,7 +184,7 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Repetition</td>
+                    <td>diff-SS (libritts-clean)</td>
                     <td>Stephen leaning back and drawing idly on his scribbler listened to the talk about him which heron checked from time to time by saying</td>
                 </tr>
                 <tr>
@@ -213,7 +213,7 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Prosody and tone</td>
+                    <td>diff-SS (libritts-other)</td>
                     <td>How strange it seemed to the sad woman as she watched the growth and the beauty that became every day more brilliant and the intelligence that threw its quivering sunshine over the tiny features of this child</td>
                 </tr>
                 <tr>
@@ -242,7 +242,7 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Prosody and tone</td>
+                    <td>vits-FS (vctk)</td>
                     <td>As to any other kind of discipline whether addressed to her mind or heart little pearl might or might not be within its reach in accordance with the caprice that ruled the moment</td>
                 </tr>
                 <tr>
@@ -271,7 +271,7 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Speech quality</td>
+                    <td>vits-FS (libritts-clean)</td>
                     <td>It was a look so intelligent yet inexplicable perverse sometimes so malicious but generally accompanied by a wild flow of spirits that hester could not help questioning at such moments whether pearl was a human child</td>
                 </tr>
                 <tr>
@@ -300,7 +300,7 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Speech quality</td>
+                    <td>vits-FS (libritts-other)</td>
                     <td>But pearl who was a dauntless child after frowning stamping her foot and shaking her little hand with a variety of threatening gestures suddenly made a rush at the knot of her enemies and put them all to flight</td>
                 </tr>
                 <tr>
@@ -329,10 +329,70 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
-                    <td>Speech quality</td>
+                    <td>diff-FS (vctk)</td>
                     <td>She screamed and shouted too with a terrific volume of sound which doubtless caused the hearts of the fugitives to quake within them</td>
                 </tr>
                 <!-- Add more rows as needed -->
+
+                <tr>
+                    <td>11</td>
+                    <td>
+                        <audio controls>
+                            <source src="audios/prm_10.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="audios/vc_10.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="audios/rio_10.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="audios/gt_10.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>diff-FS (libritts-clean)</td>
+                    <td>She screamed and shouted too with a terrific volume of sound which doubtless caused the hearts of the fugitives to quake within them</td>
+
+                    <tr>
+                    <td>12</td>
+                    <td>
+                        <audio controls>
+                            <source src="audios/prm_10.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="audios/vc_10.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="audios/rio_10.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="audios/gt_10.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>diff-FS (libritts-other)</td>
+                    <td>She screamed and shouted too with a terrific volume of sound which doubtless caused the hearts of the fugitives to quake within them</td>
+                </tr>
+                </tr>
             </tbody>
         </table>
     </section>
